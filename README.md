@@ -1,5 +1,5 @@
-# CoronaViewer
-#### Coronavirus (COVID-19) dashboard
+# CoronaViewerZA
+#### Coronavirus (COVID-19) South Africa dashboard
 
 ## Contributors wanted
 
