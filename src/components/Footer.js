@@ -9,7 +9,7 @@ export default () => {
     <footer className="footer d-flex align-items-center justify-content-between">
     	<div>
     		<strong>Disclaimer:</strong> the developer cannot be held responsible for errors, please double check figures before citing. <br />
-    		<strong>Data source:</strong> <a href="https://github.com/pomber/covid19" target="_blank" rel="noopener noreferrer">github.com/pomber/covid19</a> / <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">github.com/CSSEGISandData/COVID-19</a>
+    		<strong>Data source:</strong> <a href="https://github.com/dsfsi/covid19za" target="_blank" rel="noopener noreferrer">github.com/dsfsi/covid19za</a>
     	</div>
     	<div className="social">
     		<strong>Share:</strong>

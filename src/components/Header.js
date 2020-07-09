@@ -4,7 +4,7 @@ export default ({ totals, formatNum }) => {
 
   	return (
 	    <header className="header d-flex flex-row align-items-center justify-content-between w-100">
-	    	<div className="d-flex"><h2>Coronavirus <strong>(COVID-19)</strong> dashboard</h2></div>
+	    	<div className="d-flex"><h2>Coronavirus <strong>(COVID-19)</strong> dashboard - South Africa</h2></div>
 	    	<div className="totals d-flex flex-row">
 	    		<div>
 	    			<strong>Confirmed:</strong><br />

@@ -327,7 +327,7 @@ export default () => {
 			<div id="topbar" className="d-flex flex-row">
 				<div className="left d-flex align-items-center">
 					<a href="https://coronaviewer.com">
-						<h1 className="title">Corona<strong>Viewer</strong></h1>
+						<h1 className="title">Corona<strong>Viewer</strong>ZA</h1>
 					</a>
 				</div>
 				<div className="right d-flex align-items-center">
