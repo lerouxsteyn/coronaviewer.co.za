@@ -70,6 +70,6 @@ foreach($provinces as $code => $province) {
     $i++;
 }
 
-file_put_contents('../src/data/timeseries.json', json_encode($result));
+file_put_contents('/home/forge/coronaviewer.co.za/src/data/timeseries.json', json_encode($result));
 
 ?>
