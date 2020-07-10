@@ -32,18 +32,21 @@ export default ({ countries, activeCountries, handleCountryChange, filters }) =>
 	}
 
 	return (
-		<ul id="countries" className="my-3">
-			<p className="mb-1"><strong>Select Countries:</strong></p>
-			{countries !== false && countries.map(
-                ({ title, confirmed, active, recovered, deaths }) => (
-            		<li key={title} className="d-flex align-items-center">
-            			<label>
-	            			<input name={title} onChange={handleCountryChange} checked={activeCountries[title]} type="checkbox" className="mr-2" />
-	            			<strong>{title}</strong> ({renderNumber(filters, confirmed, active, recovered, deaths)})
-            			</label>
-        			</li>
-            	)
-            )}
-		</ul>
+		<div>
+			<ul id="countries" className="my-3">
+				<p className="mb-1"><strong>Select Provinces:</strong></p>
+				{countries !== false && countries.map(
+					({ title, confirmed, active, recovered, deaths }) => (
+						<li key={title} className="d-flex align-items-center">
+							<label>
+								<input name={title} onChange={handleCountryChange} checked={activeCountries[title]} type="checkbox" className="mr-2" />
+								<strong>{title}</strong> ({renderNumber(filters, confirmed, active, recovered, deaths)})
+							</label>
+						</li>
+					)
+				)}
+			</ul>
+			<p><small>Visit <a href="https://coronaviewer.com/" target="_blank">CoronaViewer.com</a> for world stats</small></p>
+		</div>
 	);
 }

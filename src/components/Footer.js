@@ -13,15 +13,15 @@ export default () => {
     	</div>
     	<div className="social">
     		<strong>Share:</strong>
-    		<FacebookShareButton url="https://coronaviewer.com">
+    		<FacebookShareButton url="https://coronaviewer.co.za">
     			<FontAwesomeIcon icon={faFacebookF} size="lg" />
 			</FacebookShareButton>
-			<TwitterShareButton url="https://coronaviewer.com">
+			<TwitterShareButton url="https://coronaviewer.co.za">
     			<FontAwesomeIcon icon={faTwitter} size="lg" />
     		</TwitterShareButton>
     	</div>
     	<div className="social">
-    		<a href="https://github.com/lerouxsteyn/coronaviewer.com" target="_blank" rel="noopener noreferrer">
+    		<a href="https://github.com/lerouxsteyn/coronaviewer.co.za" target="_blank" rel="noopener noreferrer">
     			<FontAwesomeIcon icon={faGithub} size="lg" /><strong>Github</strong>
     		</a>
     	</div>

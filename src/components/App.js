@@ -147,7 +147,7 @@ export default () => {
         let day_count = 1;
 
         // loop dates for any country to get all date indexes
-        Object.keys(timeseries['China']).forEach(d => {
+        Object.keys(timeseries['Gauteng']).forEach(d => {
             let totalConfirmed = 0;
             let totalActive = 0;
             let totalRecoveries = 0;
@@ -161,10 +161,10 @@ export default () => {
                 totalDeaths += timeseries[el][d]['deaths'];
             });
 
-            dataConfirmed.push({ 'x': (byDate) ? timeseries['China'][d]['date'] : day_count, 'y': totalConfirmed });
-            dataActive.push({ 'x': (byDate) ? timeseries['China'][d]['date'] : day_count, 'y': totalActive });
-            dataRecoveries.push({ 'x': (byDate) ? timeseries['China'][d]['date'] : day_count, 'y': totalRecoveries });
-            dataDeaths.push({ 'x': (byDate) ? timeseries['China'][d]['date'] : day_count, 'y': totalDeaths });
+            dataConfirmed.push({ 'x': (byDate) ? timeseries['Gauteng'][d]['date'] : day_count, 'y': totalConfirmed });
+            dataActive.push({ 'x': (byDate) ? timeseries['Gauteng'][d]['date'] : day_count, 'y': totalActive });
+            dataRecoveries.push({ 'x': (byDate) ? timeseries['Gauteng'][d]['date'] : day_count, 'y': totalRecoveries });
+            dataDeaths.push({ 'x': (byDate) ? timeseries['Gauteng'][d]['date'] : day_count, 'y': totalDeaths });
 
             day_count++;
         });
@@ -326,7 +326,7 @@ export default () => {
 		<div id="app">
 			<div id="topbar" className="d-flex flex-row">
 				<div className="left d-flex align-items-center">
-					<a href="https://coronaviewer.com">
+					<a href="https://coronaviewer.co.za">
 						<h1 className="title">Corona<strong>Viewer</strong>ZA</h1>
 					</a>
 				</div>
@@ -347,7 +347,6 @@ export default () => {
 							<div className="d-flex flex-row justify-content-end">
                                 <FilterCumulative filters={filters} handleFilter={handleFilter} />
 								<FilterLog filters={filters} handleFilter={handleFilter} numCountries={numCountries} />
-								<FilterAlign filters={filters} handleFilter={handleFilter} />
 							</div>
 						</div>
 					</div>
