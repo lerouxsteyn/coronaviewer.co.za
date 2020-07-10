@@ -70,12 +70,6 @@ foreach($provinces as $code => $province) {
     $i++;
 }
 
-$counts = [
-    'confirmed' => count($data['confirmed']),
-    'deaths' => count($data['deaths']),
-    'recovered' => count($data['recovered']),
-];
-
-echo json_encode($result);
+file_put_contents('../src/data/timeseries.json', json_encode($result));
 
 ?>
